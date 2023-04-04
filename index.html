@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Lyrics</title>
+    <style> body {
+        background-color: purple;
+        background-image: url("https://i.pinimg.com/originals/09/94/fe/0994fef2516ab02c9e33d551fa02662a.jpg");
+     }
+     </style>
+</head>
+<body>
+    <div>
+        <p class="name"><h1><span style="color:white">purple rain</span></h1></p>
+    <button onclick="displayLyrics()">sing along</button>
+    <ul>
+    <!-- each line of lyric -->
+        <li id="one">I never meant to cause you any sorrow</li>
+        <li id="two">I never meant to cause you any pain</li>
+        <li id="three">I only wanted one time to see you laughing</li>
+        <li id="four">I only want to see you laughing</li>
+        <li id="five">In the purple rain</li>
+        <li id="six">Purple rain, purple rain</li>
+        <li id="seven">Purple rain, purple rain</li>
+        <li id="eight">Purple rain, purple rain</li>
+        <li id="nine">I only want to see you bathing</li>
+        <li id="ten">In the purple rain</li>
+      </ul>
+      </div>
+      <script>
+        // set timer interval for each li increment in 2 second
+            setTimeout(function(){ 
+                document.getElementById("one").style.display = "none";}, 5000);
+            setTimeout(function(){ 
+                document.getElementById("two").style.display = "none";}, 7000);
+            setTimeout(function(){ 
+                document.getElementById("three").style.display = "none";}, 9000);
+            setTimeout(function(){ 
+                document.getElementById("four").style.display = "none";}, 11000);
+                setTimeout(function(){ 
+                document.getElementById("five").style.display = "none";}, 13000);
+            setTimeout(function(){ 
+                document.getElementById("six").style.display = "none";}, 15000);
+            setTimeout(function(){ 
+                document.getElementById("seven").style.display = "none";}, 17000);
+            setTimeout(function(){ 
+                document.getElementById("eight").style.display = "none";}, 19000);
+            setTimeout(function(){ 
+                document.getElementById("nine").style.display = "none";}, 21000);
+            setTimeout(function(){ 
+                document.getElementById("ten").style.display = "none";}, 23000);
+        </script>
+</body>
+    <style>
+        body {
+            padding: 5px;
+            display: absolute;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+      }
+      li {list-style-type: none;
+            color: white;
+            text-align: center;
+        }
+      h1{
+            text-align: center;
+      }
+        button {
+            line-height: 60px;
+            font-weight: bold;
+            color: white;
+            padding: 0 40px;
+            background: magenta;
+            cursor: pointer; //turns into pointing hand
+        }
+        button:hover {
+        background: violet;
+        }
+    document.body.appendChild(button)
+  </style>
+
+</body>
+</html>
